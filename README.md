@@ -1,7 +1,7 @@
 # Chatting-App
 Live App => [https://buddies-chat-app.netlify.app/](https://buddies-chat-app.netlify.app/)
 
-#Usage Procedure
+# Usage Procedure
  git clone the repository
  move to client and run npm install
  move to server and run npm install 
