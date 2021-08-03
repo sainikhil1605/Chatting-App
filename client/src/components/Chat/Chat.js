@@ -66,7 +66,7 @@ export const Chat = ({ location }) => {
         socket = io(ENDPOINT);
         setName(name);
         setRoom(room);
-        console.log(name, room);
+
         socket.emit('join', { name, room })
         return () => {
             socket.emit("disconnect");
@@ -87,7 +87,7 @@ export const Chat = ({ location }) => {
             socket.emit('sendMessage', message, () => setMessage(''))
         }
     }
-    console.log(messages)
+
     return (
         <div className={classes.chatOuterContainer}>
             <div className={classes.chatInnerContainer}>
